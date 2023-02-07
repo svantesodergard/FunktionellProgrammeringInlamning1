@@ -1,8 +1,8 @@
 package database;
 
 abstract public class Product {
-    String brand, model;
-    int price;
+    private String brand, model;
+    private int price;
 
     public String getBrand() {
         return brand;

@@ -5,9 +5,9 @@ import salessupport.ProductFilter;
 import java.util.List;
 
 public class Order {
-    int id;
-    List<ProductVariation> products;
-    String city;
+    private int id;
+    private List<ProductVariation> products;
+    private String city;
 
 
     public void setId(int id) {

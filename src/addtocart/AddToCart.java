@@ -10,9 +10,9 @@ import java.sql.SQLException;
 import java.util.*;
 
 public class AddToCart {
-    Repository repository = new Repository();
-    Scanner scanner = new Scanner(System.in);
-    List<ProductVariation> products = repository.getProducts();
+    final Repository repository = new Repository();
+    final Scanner scanner = new Scanner(System.in);
+    final List<ProductVariation> products = repository.getProducts();
 
     AddToCart() throws IOException {
         final Costumer costumer = promptCostumer();

@@ -1,9 +1,9 @@
 package database;
 
 public class ProductVariation extends Product {
-    int id;
-    Integer size;
-    int stock;
+    private int id;
+    private Integer size;
+    private int stock;
 
     public void setId(int id) {
         this.id = id;

@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class Repository {
-    Properties properties = new Properties();
+    final Properties properties = new Properties();
 
     public Repository() throws IOException {
         properties.load(new FileInputStream("src/database.properties"));

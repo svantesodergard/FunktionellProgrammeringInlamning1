@@ -15,10 +15,10 @@ import static java.util.Collections.reverseOrder;
 
 public class SalesSupport {
     private static final Scanner scanner = new Scanner(System.in);
-    Repository repository = new Repository();
-    ProductFilter size = (p, q) -> p.getSize().toString().equals(q);
-    ProductFilter color = (p, q) -> p.getColor().equals(q);
-    ProductFilter brand = (p, q) -> p.getBrand().equals(q);
+    final Repository repository = new Repository();
+    final ProductFilter size = (p, q) -> p.getSize().toString().equals(q);
+    final ProductFilter color = (p, q) -> p.getColor().equals(q);
+    final ProductFilter brand = (p, q) -> p.getBrand().equals(q);
 
     SalesSupport() throws IOException {
         System.out.println("Vilken rapport vill du ha ut?");
@@ -99,7 +99,6 @@ public class SalesSupport {
         System.out.println(header.append(' ').append(query).append(':'));
 
         final List<Costumer> filteredCostumers = filterCostumers(filter, query);
-        //FIXME add adress
         filteredCostumers.forEach(c -> System.out.println(" •" + c.getName() + " | " + "Västerlånggatan 20"));
     }
 

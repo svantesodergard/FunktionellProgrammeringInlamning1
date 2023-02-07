@@ -5,9 +5,9 @@ import salessupport.ProductFilter;
 import java.util.List;
 
 public class Costumer {
-    int id;
-    String name;
-    List<Order> orders;
+    private int id;
+    private String name;
+    private List<Order> orders;
 
     public Integer getActiveOrderId() {
         if (this.orders.size() == 0) {
